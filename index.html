@@ -42,27 +42,27 @@
                 <h1 class="display-6">Catologo Libri</h1>
                 <button type="button" class="btn btn-primary">Aggiungi Libro</button>
             </div>
-
-
-
-            <div class="row">
-                <div class="col-sm-6 col-md-5"><strong>Titolo</strong></div>
-                <div class="d-sm-none d-md-block col-md-2"><strong>Data prestito</strong></div>
-                <div class="col-sm-4 col-md-3"><strong>Stato</strong></div>
-                <div class="col-sm-2 col-md-1 text-center"><strong>Azioni</strong></div>
-            </div>
-            <div class="row bg-body-tertiary border-top border-bottom text-body-secondary">
-                <div class="col-sm-6 col-md-5">Titolo</div>
-                <div class="d-sm-none d-md-block col-md-2">Data prestito</div>
-                <div class="col-sm-4 col-md-3"><button type="button" class="btn btn-success">Success</button></div>
-                <div class="d-flex col-sm-2 col-md-1"><i class="fa-solid fa-pencil border"></i><i class="fa-solid fa-trash border"></i></div>
-            </div>
-            <div class="row text-body-secondary">
-                <div class="col-sm-6 col-md-5">Titolo</div>
-                <div class="d-sm-none d-md-block col-md-2">Data prestito</div>
-                <div class="col-sm-4 col-md-3">Stato</div>
-                <div class="col-sm-2 col-md-1">Azioni</div>
-            </div>
+            <table class="table table-striped table-hover small">
+                <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th class="d-sm-none d-md-table-cell">Data prestito</th>
+                        <th>Stato</th>
+                        <th class="text-center">Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I pilastri della terra</td>
+                        <td class="d-sm-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-1"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-1"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
